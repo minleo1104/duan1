@@ -1,0 +1,1317 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+.animetvn{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(8, 8, 8);
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.header .navbar {
+    height: 100%;
+    width: 1020px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header .top {
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.top .logo {
+    width: 220px;
+    height: 100%;
+}
+
+.img{
+    width: 85%;
+    height: 80%;
+}
+
+.top .search {
+    padding: 10px 3px;
+    padding-left: 5px;
+    width: 500px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    background: white;
+    justify-content: center;
+}
+
+.search input{
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    width: 500px;
+    height: 30px;
+    
+}
+
+#search-btn{
+    border: none;
+    padding: 8px;
+    border-radius: 60%;
+    font-size: 13px;
+    background-color: rgb(60, 112, 236);
+}
+
+.btn{
+    color: white;
+}
+
+.top .member {
+    width: 110px;
+    height: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.top .member button{
+    padding: 8px 19px;
+    border: none;
+    background-color: rgb(8, 8, 8);
+    cursor: pointer;
+}
+
+.content a{
+    display: block;
+    padding: 8px 19px;
+}
+
+.member .content{
+    background-color: rgb(32, 49, 62);
+    display: none;
+    position: absolute;
+    box-shadow: 2px 2px 5px white;
+    opacity: 0;
+    z-index: 7;
+}
+
+.member > .btn-member:focus + .content {
+    opacity: 1;
+    display: block;
+}
+
+.member a:hover{
+    background-color: rgb(255, 131, 0);
+}
+
+.top .member button:hover{
+    background-color: rgb(51, 153, 102);
+    color: white;
+    border-radius: 3px;
+}
+
+.header .bottom {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    z-index: 5;
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+}
+
+.content-1{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content-1 a{
+    display: block;
+    padding: 8px 19px;
+}
+
+.item-bottom .content-1{
+    background-color: rgb(32, 49, 62);
+    display: none;
+    position: absolute;
+    box-shadow: 2px 2px 2px white;
+    opacity: 0;
+}
+
+.item-bottom > button:focus + .content-1{
+    opacity: 1;
+    display: block;
+}
+
+.item-bottom button{
+    padding: 8px 19px;
+    border: none;
+    background-color: rgb(8, 8, 8);
+    cursor: pointer;
+}
+
+.content-1 a:hover{
+    background-color: rgb(255, 131, 0);
+}
+
+.bottom .item-bottom button:hover{
+    color: white;
+    background-color: rgb(51, 153, 102);
+    border-radius: 3px;
+}
+
+.bottom .btn-navbar{
+    background-color: rgb(51, 153, 102);
+    border-radius: 3px;
+}
+
+ .main {
+    width: 100%;
+    height: auto;
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .main-link {
+    background-color: rgb(27, 27, 27);
+    height: auto;
+    width: 1000px;
+
+}
+
+.main .main-title-page {
+    width: 1000px;
+    height: 50px;
+    background-color: rgb(8, 8, 8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-title-page .head-page-title{
+    width: 950px;
+    height: 60%;
+    border: 1px solid rgb(142, 137, 9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .home-list-trailers {
+    background-color: rgb(241, 241, 241);
+    height: auto;
+    width: 1000px;
+    
+}
+
+.text-comingsoon{
+    background-color: rgb(0, 102, 93);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.banner{
+    height: 70%;
+    width: 88%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.soon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.xem-them{
+    height: 30px;
+    width: 100px;
+    border: 1px solid white;
+    background-color: rgb(60, 112, 236);
+}
+
+.text-comingsoon .xem-them:hover{
+    background-color: red;
+}
+
+.list-comingsoon{
+    background-color: rgb(241, 241, 241);
+    height: 200px;
+    width: 100%;
+    
+}
+
+.list-soon{
+    height: 100% ;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.list-soon button{
+    border: none;
+    /* background-color: gray; */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.list-soon i{
+    font-size: 20px;
+    color: green;
+}
+
+.item-soon{
+    height: 200px;
+    width: 150px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+
+.list-soon .name{
+    width: 100%;
+    height: 12%;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.item-soon img{
+    height: 85%;
+    width: 95%;
+}
+
+
+
+.main .home-list-title {
+    background-color: rgb(241, 241, 241);
+    height: auto;
+    width: 1000px;
+    display: flex;
+}
+
+.home-list-anime{
+    height: auto;
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-list-anime .anime-new{
+    height: auto;
+    width: 100%;
+}
+
+.header-anime{
+    background-color: rgb(0, 102, 93);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.anime-list{
+    height: auto;
+    width: 700px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    row-gap: 20px;
+}
+
+.item-flim .img-anime{
+    height: 160px;
+    width: 150px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.item-flim img{
+    height: 160px;
+    width: 150px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.item-flim{
+    height: 200px;
+    width: 150px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    row-gap: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.item-flim .name {
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-top: 1px solid black;
+    font-weight: 700;
+}
+
+.item-flim .episode {
+    height: auto;
+    width: auto;
+    background-color: rgb(5, 110, 180);
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    z-index: 6;
+    color: white;
+    border-radius: 15%;
+}
+
+.item-flim .time {
+    height: auto;
+    width: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 6;
+    color: white;
+    background-color: rgb(255, 131, 0);
+    display: inline-flex;
+}
+
+.item-flim .viewed {
+    height: auto;
+    width: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 6;
+    background-color: rgb(0, 102, 93);
+    display: flex;
+    font-size: 8px;
+    align-items: center;
+}
+
+.viewed span{
+    color: white;
+    font-size: 11px;
+}
+
+
+.play-vd i{
+    font-size: 80px;
+}
+
+.play-vd {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+
+
+ .play-vd:hover{
+    opacity: 1;
+}
+
+.anime-list .name{
+    width: 100%;
+    height: 12%;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.sieu-nhan-list .name{
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid black;
+}
+
+.cartoon-list .name{
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid black;
+}
+
+.japanese-drama-list .name{
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid black;
+}
+
+.box-watch-more{
+    height: 35px;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.watch-more{
+    background-color: rgb(56, 88, 134);
+    height: 24px;
+    width: 650px;
+}
+
+.watch-more:hover{
+    background-color: red;
+}
+
+.home-list-anime .cartoon{
+    height: auto;
+    width: 100%;
+}
+
+.header-cartoon{
+    background-color: rgb(0, 102, 93);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartoon-list{
+    height: auto;
+    width: 700px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-list-anime .japanese-drama{
+    height: auto;
+    width: 100%;
+}
+
+.header-japanese-drama{
+    background-color: rgb(0, 102, 93);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.japanese-drama-list{
+    height: auto;
+    width: 700px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-list-anime .sieu-nhan{
+    height: auto;
+    width: 100%;
+}
+
+.header-sieu-nhan{
+    background-color: rgb(0, 102, 93);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sieu-nhan-list{
+    height: auto;
+    width: 700px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-list-more{
+    height: auto;
+    width: 300px;
+}
+
+.history{
+    width: 100%;
+    height: auto;
+}
+
+.header-history{
+    background-color: rgb(0, 102, 93);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-history{
+    width: 100%;
+    height: auto;
+}
+
+.item-history{
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
+
+.watch-all{
+    background-color: rgb(51, 153, 102);
+    width: 100%;
+    height: 30px;
+}
+
+.watch-all:hover{
+    background-color: red;
+}
+
+.top-trend{
+    width: 100%;
+    height: auto;
+}
+
+.header-top-trend{
+    background-color: rgb(0, 102, 93);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time-top-trend{
+    background-color: gray;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-time{
+    height: 100%;
+    width: 20%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-time:first-child{
+    background-color: rgb(51, 153, 102);
+}
+
+.list-top-trend{
+    height: auto;
+    width: 100%;
+    background-color: rgb(65, 65, 65);
+}
+
+.item-trend{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.item-trend .left{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-trend .left button{
+    font-size: 18px;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+
+.item-trend .right{
+    height: 90%;
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.item-trend .right .box-img{
+    height: 100%;
+    width: 25%;
+}
+
+.item-trend .right .box-img img{
+    height: 100%;
+    width: 100%;
+}
+
+.item-trend .right .chi-tiet{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-trend .right .chi-tiet a{
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(111, 211, 50);
+}
+
+.item-trend .right .chi-tiet .view{
+    color: rgb(197, 225, 12);
+    display: flex;
+}
+
+.item-trend .right .chi-tiet .number{
+    color: rgb(172, 96, 28);
+}
+
+.comment{
+    border: 1px solid white;
+    width: 100%;
+    height: auto;
+}
+
+.new-comment{
+    background-color: rgb(0, 102, 93);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-comment{
+    height: 600px;
+    width: 100%;
+    overflow: scroll;
+}
+
+.comment .item-comment{
+    height: 150px;
+    width: 100%;
+    border: 1px solid black;
+
+}
+
+.ads-1{
+    background-color: rgb(0, 102, 93);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid black; */
+    background-color: rgb(8, 8, 8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 200px 100px 300px white;
+}
+
+.footer .description {
+    background-color: rgb(8, 8, 8);
+    height: 180px;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.description .right-description{
+    height: 130px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-right-description{
+    height: 100%;
+    width: 400px;
+}
+
+.description .left-description{
+    height: 130px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-left-description{
+    height: 100%;
+    width: 200px;
+}
+
+.description .bottom-description{
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-bottom-description{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.ads{
+    background-color: gray;
+    width: 100%;
+    height: 15px;
+    display: flex;
+}
+
+@media only screen and (max-width: 576px) {
+    
+ }
+
+@media only screen and (max-width: 768px) {
+    
+ }
+
+@media only screen and (max-width: 992px) {
+    .list-comingsoon{
+        display: none;
+    }
+    .text-comingsoon{
+        display: none;
+    }
+    .main .main-link{
+        display: none;
+    }
+    .animetvn{
+        width: 100%;
+    }
+    .navbar .bottom {
+        display: none;
+    }
+    .animetvn{
+        height: auto;
+        width: 1000px;
+    }
+    .home-list-title{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap ;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .home-list-more{
+        width: 700px;
+    }
+    .list-top-trend .right .box-img img{
+        width: 70px;
+        height: 90px;
+    }
+    .list-top-trend .right .chi-tiet{
+        position: relative;
+        right: 80px;
+    }
+ }
+
+
+@media only screen and (max-width: 1200px) {
+    
+ }
+
+.main {
+    width: 100%;
+    height: 2700px;
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.main .main-link {
+    background-color: rgb(27, 27, 27);
+    height: auto;
+    width: 1000px;
+
+}
+
+.main .main-title-page {
+    width: 1000px;
+    height: 50px;
+    background-color: rgb(8, 8, 8);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-title-page .head-page-title{
+    width: 950px;
+    height: 60%;
+    border: 1px solid rgb(142, 137, 9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .home-list-trailers {
+    background-color: rgb(241, 241, 241);
+    height: auto;
+    width: 1000px;
+    
+}
+
+.text-comingsoon{
+    background-color: rgb(0, 102, 93);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.banner{
+    height: 70%;
+    width: 88%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.soon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.xem-them{
+    height: 30px;
+    width: 100px;
+    border: 1px solid white;
+    background-color: rgb(60, 112, 236);
+}
+
+.text-comingsoon .xem-them:hover{
+    background-color: red;
+}
+
+.list-comingsoon{
+    background-color: aliceblue;
+    background-color: rgb(241, 241, 241);
+    height: 200px;
+    width: 100%;
+    
+}
+
+.list-soon{
+    height: 100% ;
+    width: 100%;
+    display: flex;
+}
+
+.item-soon{
+    height: 100%;
+    width: 20%;
+    background-color: rgb(241, 241, 241);
+    border: 1px solid black;
+}
+
+.main .home-list-title {
+    background-color: rgb(241, 241, 241);
+    height: 68.1%;
+    width: 1000px;
+    display: flex;
+}
+
+.home-list-anime{
+    height: auto;
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-list-anime .anime-new{
+    /* border: 1px solid black; */
+    height: auto;
+    width: 100%;
+}
+
+.header-anime{
+    background-color: rgb(0, 102, 93);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.anime-list{
+    height: auto;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    row-gap: 20px;
+}
+.item-flim{
+    border: 1px solid black;
+    width: 150px;
+    height: 200px;
+}
+
+.box-watch-more{
+    height: 32px;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.watch-more{
+    background-color: rgb(56, 88, 134);
+    height: 24px;
+    width: 650px;
+}
+
+.watch-more:hover{
+    background-color: red;
+}
+
+.home-list-anime .cartoon{
+    /* border: 1px solid black; */
+    height: auto;
+    width: 100%;
+}
+
+.header-cartoon{
+    background-color: rgb(0, 102, 93);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartoon-list{
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-list-anime .japanese-drama{
+    /* border: 1px solid black; */
+    height: auto;
+    width: 100%;
+}
+
+.header-japanese-drama{
+    background-color: rgb(0, 102, 93);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.japanese-drama-list{
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-list-anime .sieu-nhan{
+    /* border: 1px solid black; */
+    height: auto;
+    width: 100%;
+}
+
+.header-sieu-nhan{
+    background-color: rgb(0, 102, 93);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sieu-nhan-list{
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-list-more{
+    /* border: 1px solid black; */
+    height: auto;
+    width: 300px;
+}
+
+.history{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: auto;
+}
+
+.header-history{
+    background-color: rgb(0, 102, 93);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-history{
+    width: 100%;
+    height: auto;
+}
+
+.item-history{
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
+
+.watch-all{
+    background-color: rgb(51, 153, 102);
+    width: 100%;
+    height: 30px;
+}
+
+.watch-all:hover{
+    background-color: red;
+}
+
+.top-trend{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: auto;
+}
+
+.header-top-trend{
+    background-color: rgb(0, 102, 93);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time-top-trend{
+    background-color: gray;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-time{
+    height: 100%;
+    width: 20%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-time:first-child{
+    background-color: rgb(51, 153, 102);
+}
+
+.list-top-trend{
+    height: auto;
+    width: 100%;
+    background-color: blanchedalmond;
+}
+
+.item-trend{
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.comment{
+    border: 1px solid white;
+    width: 100%;
+    height: auto;
+}
+
+.new-comment{
+    background-color: rgb(0, 102, 93);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ads-1{
+    background-color: rgb(0, 102, 93);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid black; */
+    background-color: rgb(8, 8, 8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .description {
+    background-color: rgb(8, 8, 8);
+    height: 180px;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.description .right-description{
+    height: 130px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-right-description{
+    height: 100%;
+    width: 400px;
+}
+
+.description .left-description{
+    height: 130px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-left-description{
+    height: 100%;
+    width: 200px;
+}
+
+.description .bottom-description{
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-bottom-description{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.ads{
+    background-color: gray;
+    width: 100%;
+    height: 15px;
+    display: flex;
+}
+
+/* .ads .un-ads{
+    height: 100%;
+    width: 150px;
+    background-color: greenyellow;
+    position: relative;
+    left: 58%;
+} */
+
+@media only screen and (max-width: 900px) {
+   .main .main-link {
+    display: none;
+   }
+}
+
+.driopdown-navbar{
+    border: none;
+    background: none;
+}
